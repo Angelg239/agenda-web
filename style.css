@@ -1,23 +1,45 @@
-body,html{
-    font-family: Arial, Helvetica, sans-serif;
+body, html {
+    font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
     height: 100%;
-    width: 100vm;
+    width: 100vw;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     background: url(Imagen.jpg) center center;
     background-size: cover;
+    color: #2A2630;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.contenedor{
+h1 { 
+    font-family: 'Space Grotesk', sans-serif; 
+    font-weight: 700; 
+}
+
+#titulo {
+    color: #92400E;
+}
+
+p {
+    color: #5C5763;
+    font-size: 16px;
+}
+
+.contenedor {
     text-align: center;
     padding: 20px;
     background-color: #fffbe6;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.boton-redireccion{
+.tarjeta {
+    background: #FEF6E8;
+    padding: 16px;
+}
+
+.boton-redireccion {
     background-color: #fd5e4b;
     color: white;
     padding: 10px 20px;
@@ -27,5 +49,26 @@ body,html{
     text-decoration: none;
 }
 
-.boton-redireccion:hover{
-    background-color: #fd5e4b}
+.boton-redireccion:hover {
+    background-color: #e04b39;
+}
+
+.fila {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rejilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+/* Responsive: cuando la pantalla sea de 600px o menos */
+@media (max-width: 600px) {
+    .rejilla { 
+        grid-template-columns: 1fr; 
+    }
+}

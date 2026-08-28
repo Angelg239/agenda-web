@@ -3,15 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página Web de Angel Gabriel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
         <div class="contenedor">
-            <h1>Bienvenido a tu pagina web</h1>
-            <p>Esta es mi primera pagina web, soy Angel Gabriel</p>
-            <a href="#" class="boton-redireccion">Haz click aqui</a>
+            <h1>Bienvenido a tu página web</h1>
+            <p>Esta es mi primera página web, soy Angel Gabriel</p>
+            <a href="https://gamejolt.com/@AngelGRA" target="_blank">Ir al sitio</a>
+
+            <!-- Imagen (alt = texto alternativo, obligatorio) -->
+            <img src="logo.png" alt="Logo del curso" width="120">
+
+            <!-- Lista sin orden -->
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+
+            <!-- Lista ordenada (1, 2, 3) -->
+            <ol>
+                <li>Crear</li>
+                <li>Versionar</li>
+            </ol>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quiz PHP</td>
+                        <td>2026-09-25</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form method="post" action="guardar.php">
+                <label>Título:
+                    <input type="text" name="titulo">
+                </label>
+                <input type="date" name="fecha">
+                <textarea name="descripcion"></textarea>
+                <button type="submit">Agregar</button>
+            </form>
+
         </div>
     </div>
 </body>
